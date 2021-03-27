@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Your link
+{% endblock %}
+
+{% block content%}
+<div class="features">
+    <p class="fw-lighter">Here is you link:</p>
+    <p class="fw-lighter">For site <b>{{hashs[-1].intext}}</b> link is <b>127.0.0.1:5000/{{ hashs[-1].finalhash }}</b></p>
+</div>
+{% endblock %}

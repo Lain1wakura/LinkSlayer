@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Linkslayer - Main Page
+{% endblock %}
+
+{% block content%}
+<h1>Main page</h1>
+<div class="features">
+    <p class="fw-lighter">Paste the link in the input window below to shorten it</p>
+    <form method="post">
+        <input type="text" name="intext" id="intext" class="form-control" placeholder="Past link here" value=""><br>
+        <input type="submit" class="btn btn-success" value="Convert">
+    </form>
+</div>
+{% endblock %}
